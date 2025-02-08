@@ -3,9 +3,7 @@ title: Definition of Done - Objective vs Subjective
 description: Learn the critical distinction between subjective goals and the objective Definition of Done (DoD) in Scrum. This guide dives into why a measurable, automated DoD is essential for consistent quality, stakeholder trust, and professional-grade product delivery.
 ResourceId: -Z5GGUOjc-d
 ResourceType: blog
-ResourceImport: true
-ResourceImportSource: Wordpress
-ResourceImportOriginalSource: Wordpress
+ResourceImport: false
 date: 2025-01-03
 AudioNative: true
 creator: Martin Hinshelwood
@@ -25,15 +23,24 @@ aliasesFor404:
 - /blog/definition-of-done---objective-vs-subjective
 tags:
 - Scrum
+- Definition of Done
+- Strategic
+- Acceptance Test Driven Development
+- Scrum Product Development
+- Agility
+- Professional Scrum
 - Scrum Team
-- Software Increment
-- Continuous Delivery
-- Team Collaboration
-- Agile Product Ownership
-categories:
-- Metrics and Learning
+- Scrum Product Management
+- CI/CD
 - Agile Product Management
-- Technical Excellence
+- Agile Product Validation
+- Agile Product Ownership
+- Software Increment
+- Agile Software Development
+categories:
+- Scrum
+- Metrics and Learning
+- Product Delivery
 preview: 2025-01-03-definition-of-done-objective-vs-subjective.jpg
 
 ---

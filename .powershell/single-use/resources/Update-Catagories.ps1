@@ -1,4 +1,5 @@
 $CatalogCategories = @{
+    "Miscellaneous"                    = "Topics that don't fit into any specific category.";
     "Organisational Agility"           = "The ability of an organisation to rapidly adapt to market changes, customer needs, and emerging opportunities."
     "Application Lifecycle Management" = "Managing the development, maintenance, and governance of software applications throughout their lifecycle."
     "Azure DevOps"                     = "The Azure DevOps or TFS (Team FOundation Server) product from Microsoft that is a set of development tools and services by Microsoft for CI/CD, collaboration, and agile project management."
@@ -36,6 +37,7 @@ $CatalogCategories = @{
 }          
 
 $CatalogTags = @{
+    "Miscellaneous"                           = "Topics that don't fit into any specific tag.";
     "Ability to Innovate"                     = "The key to staying ahead in a rapidly evolving market. Innovation isn't just about new ideas; it's about creating value through agility and continuous improvement.";
     "Acceptance Test Driven Development"      = "A collaborative approach where teams define business-facing tests before development, ensuring alignment between stakeholders and engineers.";
     "Accountability"                          = "In Agile, accountability is about ownership, not blame. Teams own their commitments, fostering trust and high performance.";
@@ -65,7 +67,6 @@ $CatalogTags = @{
     "Continuous Integration"                  = "Automating code integration to ensure teams can deliver working software daily.";
     "Cross Functional Teams"                  = "The Agile ideal: teams with all the skills needed to deliver end-to-end value.";
     "Customer Feedback Loops"                 = "Tightening the loop between delivery and learning to ensure products meet real needs.";
-    "Cycle"                                   = "The rhythm of delivery, whether in sprints or flow-based systems.";
     "Decision Theory"                         = "Applying data and empirical thinking to product and engineering decisions.";
     "Definition of Done"                      = "The line between incomplete work and a true increment of value.";
     "Deployment Strategies"                   = "Balancing risk and speed when getting software into production.";
@@ -82,8 +83,6 @@ $CatalogTags = @{
     "Psychological Safety"                    = "The foundation for innovation and high-performing teams.";
     "Scaling Agility"                         = "Moving beyond frameworks to build agility at every level.";
     "Evidence Based Management"               = "Applying empirical evidence to optimise organisational agility and decision-making.";
-    "Featured"                                = "Highlighted posts that provide key insights and perspectives.";
-    "Homepage"                                = "Posts featured prominently on the homepage for quick access.";
     "Mentoring"                               = "Guidance and coaching for agile professionals and leadership.";
     "Modern Source Control"                   = "Best practices for version control and branching strategies in modern software development.";
     "Operational Practices"                   = "Techniques and strategies for improving operational efficiency and delivery.";
@@ -220,7 +219,14 @@ $CatalogTags = @{
     "Sprint Review Workshops"                 = "Structured review sessions to gather insights and refine the product increment iteratively.";
     "Daily Scrum"                             = "Daily meeting by the Developers and for the Developers to plan the next 24h .";
     "Personal"                                = "Just some personal thoughts and experiences.";
+    "Windows"                                 = "The Windows operating system, including installation, configuration, troubleshooting, and updates.";
+    "System Configuration"                    = "Setting up and configuring software, hardware, and systems for optimal performance.";
+    "Troubleshooting"                         = "Identifying and resolving issues in software, hardware, and systems to maintain functionality.";
+
+
 }
+
+
 
 $FilteredTags = @($CatalogTags.Keys | Where-Object { $CatalogCategories.ContainsKey($_) })
 
@@ -275,5 +281,5 @@ function Create-MarkdownFilesForCatalog {
     }
 }
 
-##Create-MarkdownFilesForCatalog -catalog $CatalogCategories -OutputDirectory "site\content\categories"
-##Create-MarkdownFilesForCatalog -catalog $CatalogTags -OutputDirectory "site\content\tags\"
+Create-MarkdownFilesForCatalog -catalog $CatalogCategories -OutputDirectory "site\content\categories"
+Create-MarkdownFilesForCatalog -catalog $CatalogTags -OutputDirectory "site\content\tags\"
